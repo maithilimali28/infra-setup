@@ -31,14 +31,14 @@ resource "aws_amplify_app" "frontend" {
   }
 }
 
-resource "aws_amplify_branch" "main" {
+resource "aws_amplify_branch" "master" {
   app_id      = aws_amplify_app.frontend.id
-  branch_name = "main"
+  branch_name = "master"
 
   # Auto build on every git push
   enable_auto_build = true
 }
 
 output "amplify_url" {
-  value = "https://${aws_amplify_branch.main.branch_name}.${aws_amplify_app.frontend.id}.amplifyapp.com"
+  value = "https://${aws_amplify_branch.master.branch_name}.${aws_amplify_app.frontend.id}.amplifyapp.com"
 }
