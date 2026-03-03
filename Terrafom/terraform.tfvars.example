@@ -1,0 +1,12 @@
+aws_region         = "ap-south-1"
+environment        = "dev"
+
+vpc_cidr           = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
+
+instance_type      = "t2.micro"
+key_pair_name      = "YOUR_KEY_PAIR_NAME"
+ami_id             = "ami-0f58b397bc5c1f2e8"
+
+github_repo        = "https://github.com/YOUR_USERNAME/notes-app"
+github_token       = "YOUR_GITHUB_PAT_TOKEN"

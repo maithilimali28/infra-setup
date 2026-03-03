@@ -1,0 +1,82 @@
+# ── Terraform secrets ────────────────────
+terraform.tfvars       # your real values — NEVER commit
+*.tfvars               # catch all tfvars files
+!*.tfvars.example      # except the example file
+
+# ── Terraform auto-generated ─────────────
+.terraform/            # provider downloads
+.terraform.lock.hcl    # lock file (optional: some teams commit this)
+# terraform.tfstate      # state file (use S3 backend instead)
+# terraform.tfstate.backup
+# *.tfstate.*.backup
+
+# ── SSH keys ─────────────────────────────
+*.pem
+*.key
+
+# ── OS files ─────────────────────────────
+.DS_Store
+*.log
+
+.terraform.tfvars.example
+
+# Terraform
+.terraform/
+*.tfstate
+# *.tfstate.backup
+# *.tfstate.*.backup
+.terraform.lock.hcl
+
+# Secrets
+# terraform.tfvars
+# terrafrm.tfstate
+
+# Keys
+*.pem
+
+# Terraform state
+# terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
+
+# Secrets
+# terraform.tfvars
+*.tfvars
+!*.tfvars.example
+
+# Terraform providers
+.terraform/
+.terraform.lock.hcl
+
+# Keys
+*.pem
+
+# Terraform providers & cache
+.terraform/
+
+# Terraform state files (contain secrets)
+*.tfstate
+*.tfstate.*
+# terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform lock file
+.terraform.lock.hcl
+
+# Secret variables (NEVER commit)
+# terraform.tfvars
+*.tfvars
+!*.tfvars.example
+
+# SSH keys
+*.pem
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+
+.env
